@@ -1,0 +1,55 @@
+﻿<Window x:Class="VirtualWallet.WalletInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VirtualWallet"
+        mc:Ignorable="d"
+        Title="Wallet Info" SizeToContent="WidthAndHeight" Icon="/pig32.png">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">Name:</Label>
+                    <Label Name="Name" Width="300"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">Email:</Label>
+                    <Label Name="Email"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">Balance:</Label>
+                    <Label Name="Balance"></Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">Current Password:</Label>
+                    <PasswordBox Width="200" Name="CurrentPassword"></PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">New Password:</Label>
+                    <PasswordBox Width="200" Name="NewPassword"></PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="140">Repeat New Password:</Label>
+                    <PasswordBox Width="200" Name="RepeatNewPassword"></PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button Margin="140,5,5,5" Click="ChangePassword" IsDefault="True">Change Password</Button>
+                </StackPanel>
+            </StackPanel>
+            <Image Width="128" Height="128" Name="Image"></Image>
+            <Image Margin="5,-112,0,0" Name="Lock" Width="16" Height="16"></Image>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Width="140">Public Key:</Label>
+            <RichTextBox Name="PubKey" Height="120" Width="480" Margin="0,5,5,5" FontSize="11" FontFamily="Courier New" 
+                     ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <RichTextBox.Resources>
+                    <Style TargetType="{x:Type Paragraph}">
+                        <Setter Property="Margin" Value="0"/>
+                    </Style>
+                </RichTextBox.Resources>
+            </RichTextBox>
+        </StackPanel>
+    </StackPanel>
+</Window>

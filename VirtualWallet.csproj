@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+	<UseWindowsForms>True</UseWindowsForms>
+	<ApplicationIcon>pig64.ico</ApplicationIcon>
+	<Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Hunimal.node" />
+    <None Remove="locked32.png" />
+    <None Remove="pig32.png" />
+    <None Remove="unlocked32.png" />
+  </ItemGroup>
+
+    <ItemGroup>
+	    <PackageReference Include="Microsoft.Data.Sqlite" Version="5.0.6" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Hunimal.node" />
+      <Resource Include="locked32.png" />
+      <Resource Include="pig32.png" />
+      <Resource Include="unlocked32.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+</Project>
+

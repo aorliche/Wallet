@@ -1,0 +1,10 @@
+{
+  "uri": "https://hunimal.org/Pigcoin/Node/",
+  "w": {
+    "name": "Eve",
+    "email": "aorliche@gmail.com",
+    "pubKey": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvqy15LQZ09RcEa0rNzBg8mgG78ikSfnjBtU7Sez2v3SbXFOTlX2HYOuGpLZ+oS4nLPUJeQK4p49pmzJJTB5wdfOz0q0Mj9U3nEZWSvizw8Oa/Onu1j76yFJaHbP0C7C42Y57twsJWnSDqp2HPpztkAL4+jlcEG/WEbtApeXx7wEfGZOqW5i9Y0OeBIiV3wlLEnZ4N6VktTmhZA99zKz7jDua6xaX1vtLx4CwEa5q64WLfS3t9lwD/Er0lMLQISHeqn2WwnEsJVA0JCNB3HoEAUb5gI5VoSamOgisy70Bk4Z/e9TKBaV+jdGaCrcypxc1DqRC3cfkkeI84PlbJWxIPQIDAQAB",
+    "privKeyPkcs8": "",
+    "balance": 0
+  }
+}
